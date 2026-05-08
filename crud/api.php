@@ -65,8 +65,13 @@
             // Create a new user
             $data = json_decode(file_get_contents("php://input"), true);
 
-            $name = $conn->real_escape_string($data['name']);
+            $fname = $conn->real_escape_string($data['fname']);
+            $fname = $conn->real_escape_string($data['lname']);
             $email = $conn->real_escape_string($data['email']);
+            $password = $conn->real_escape_string(md5($data['password']));
+           
+
+          
 
             $conn->query("INSERT INTO users (name, email) VALUES ('$name', '$email')");
 
