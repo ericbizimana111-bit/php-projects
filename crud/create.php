@@ -8,6 +8,7 @@ if (isset($_SESSION['user_id'])) {
     exit();
 }
 
+
 if (isset($_POST['submit'])) {
     $first_name = trim($_POST['firstname']);
     $last_name = trim($_POST['lastname']);

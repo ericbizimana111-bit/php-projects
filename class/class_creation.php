@@ -13,9 +13,9 @@
     class Car
     {
         public $color;
-        public $model;
         public $name;
         public $quality;
+        public $model;
         public $speed;
         public $guarantee;
         public function start()
@@ -41,6 +41,8 @@
     $limuzin->color = "white";
     $limuzin->model = "limuzin";
     $limuzin->start();
+    echo "$limuzin->color '<br>'";
+    echo "$limuzin->model '<br>'";
 
 
 
