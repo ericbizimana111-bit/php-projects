@@ -14,7 +14,7 @@ if (isset($_POST['submit'])) {
     $last_name = trim($_POST['lastname']);
     $email = trim($_POST['email']);
     $password = $_POST['password'];
-    $gender = $_POST['gender'];
+    $gender = $_POST['gender']
 
     // Validation
     if (empty($first_name) || empty($last_name) || empty($email) || empty($password) || empty($gender)) {
